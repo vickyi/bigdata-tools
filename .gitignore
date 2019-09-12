@@ -1,0 +1,41 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+dea
+*.iml
+.vscode
+/node_modules/
+pkg
+bin
+build
+.DS_Store
+*/.DS_Store
+*/.idea/*
+/.idea
+/dist/
+logs/
+dependency-reduced-pom.xml
+derby.log
+metastore_db

@@ -1,0 +1,4 @@
+com.aiplus.bi.etl.input.rdb.ExportRthJobDescriptor
+com.aiplus.bi.etl.output.rdb.ExportHtrJobDescriptor
+com.aiplus.bi.etl.input.druid.ExportDthJobDescriptor
+com.aiplus.bi.etl.output.rdb.ExportHive2MySQLDescriptor

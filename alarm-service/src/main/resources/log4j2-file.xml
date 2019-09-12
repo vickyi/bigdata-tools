@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <Console name="STDOUT" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d %p [%t] %c{1.} (%M:%L) - %m%n"/>
+        </Console>
+        <RollingFile name="RollingFileAlarmService" fileName="logs/alarm-service.log"
+                     filePattern="logs/$${date:yyyy-MM}/alarm-service-%d{MM-dd-yyyy}-%i.log.gz">
+            <PatternLayout>
+                <Pattern>%d %p [%t] %c{1.} (%M:%L) - %m%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="1 GB"/>
+            </Policies>
+            <DefaultRolloverStrategy fileIndex="max" max="10"/>
+        </RollingFile>
+        <RollingFile name="RollingFileJSch" fileName="logs/jsch.log"
+                     filePattern="logs/$${date:yyyy-MM}/jsch-%d{MM-dd-yyyy}-%i.log.gz">
+            <PatternLayout>
+                <Pattern>%d %p [%t] %c{1.} (%M:%L) - %m%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="1 GB"/>
+            </Policies>
+            <DefaultRolloverStrategy fileIndex="max" max="10"/>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="STDOUT"/>
+            <AppenderRef ref="RollingFileAlarmService"/>
+        </Root>
+        <Logger name="com.aiplus.bi.log.JSchSLF4JLogger" level="info">
+            <AppenderRef ref="RollingFileJSch"/>
+        </Logger>
+    </Loggers>
+</Configuration>
