@@ -27,7 +27,7 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
             <properties>
-                <jackson-druid.version>2.4.6</jackson-druid.version>
+                <jackson-druid.version>[2.9.9.2,)</jackson-druid.version>
             </properties>
             <dependencies>
                 <dependency>
