@@ -45,7 +45,7 @@ public class MetadataConfiguration implements MetadataConfigurable {
     }
 
     public Connection getMetadataConnection() throws SQLException {
-        return MetadataConfiguration.getJdbcConnection(getProperty(METADATA_JDBC_URL_KEY), getProperty(METADATA_JDBC_USER_KEY), getProperty(METADATA_JDBC_PASSWORD_KEY));
+        return MetadataConfiguration.getJdbcConnection(getProperty(METADATA_JDBC_URL_KEY), getProperty(METADATA_JDBC_USER_KEY), getProperty(METADATA_JDBC_PWD_KEY));
     }
 
     public DataSourceConnectionInfo getDataSourceConnectionInfo(String dataSourceCode) throws SQLException {

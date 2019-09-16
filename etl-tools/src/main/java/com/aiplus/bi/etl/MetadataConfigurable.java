@@ -25,7 +25,7 @@ public interface MetadataConfigurable {
     /**
      * 元数据存储的数据库连接密码.
      */
-    String METADATA_JDBC_PASSWORD_KEY = "metadata.jdbc.password";
+    String METADATA_JDBC_PWD_KEY = "metadata.jdbc.password";
 
     /**
      * 获取元数据的配置对象.
