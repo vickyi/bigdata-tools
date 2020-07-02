@@ -43,7 +43,7 @@
         <log4j2.version>2.11.1</log4j2.version>
         <junit.version>4.12</junit.version>
         <hadoop.version>2.7.2</hadoop.version>
-        <mysql-connector-java.version>5.1.46</mysql-connector-java.version>
+        <mysql-connector-java.version>8.0.16</mysql-connector-java.version>
         <druid-io.version>0.12.2</druid-io.version>
 
         <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
