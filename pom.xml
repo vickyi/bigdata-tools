@@ -41,7 +41,7 @@
         <sun.javax.mail-api.version>${javax.mail-api.version}</sun.javax.mail-api.version>
         <slf4j.version>1.7.25</slf4j.version>
         <log4j2.version>2.11.1</log4j2.version>
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
         <hadoop.version>2.7.2</hadoop.version>
         <mysql-connector-java.version>5.1.46</mysql-connector-java.version>
         <druid-io.version>0.12.2</druid-io.version>
